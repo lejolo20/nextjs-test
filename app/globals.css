@@ -1,0 +1,149 @@
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-size: 1rem;
+}
+
+.header-container {
+  font-size: large;
+  font-weight: 700;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  /* padding: 0 1rem; */
+  background-color: lightgray;
+  width: 100%;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+.header-unorderList {
+  display: flex;
+  justify-content: flex-end;
+  width: 70%;
+  list-style: none;
+}
+
+.header-link {
+  color: black;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.main-users-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.users-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+  max-width: 500px;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.11);
+}
+
+.users-container:hover {
+  background-color: lightgray;
+  color: rgba(1, 0, 0, 0.76);
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.374);
+}
+
+.users-img {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 100px;
+}
+
+.users-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  min-width: 200px;
+  height: 100px;
+  /* border: 2px solid blue; */
+}
+
+.users-data > h4,
+h5 {
+  margin: 0.25rem 0 0;
+  padding: 0.25rem 0;
+}
+
+.user-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.11);
+  background-color: lightgray;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-goBack {
+  border: none;
+  background-color: black;
+  color: antiquewhite;
+  height: 1.5rem;
+  width: 100px;
+  border-radius: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  .header-container {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .users-container,
+  .user-container {
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    font-size: 0.75rem;
+  }
+
+  .header-logo {
+    width: 100%;
+    height: 50px;
+  }
+
+  .header-unorderList {
+    display: none;
+  }
+  .users-data > h4,
+  h5 {
+    font-size: 0.75rem;
+  }
+}
